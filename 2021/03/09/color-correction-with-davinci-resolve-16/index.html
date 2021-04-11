@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Georgia">
+
+
+    <meta name="subtitle" content="l'art pour l'art">
+
+
+
+
+<title>Color Correction with DaVinci Resolve 16 | Georgia&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/gflynn1024/gflynn1024.github.io/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/gflynn1024/gflynn1024.github.io/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/gflynn1024/gflynn1024.github.io/js/script.js"></script>
+    
+    <script src="/gflynn1024/gflynn1024.github.io/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/gflynn1024/gflynn1024.github.io/">Georgia&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/archives">Posts</a>
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/category">Categories</a>
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/tag">Tags</a>
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/gflynn1024/gflynn1024.github.io/">Georgia&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/archives">Posts</a>
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/category">Categories</a>
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/tag">Tags</a>
+                
+                    <a class="menu-item" href="/gflynn1024/gflynn1024.github.io/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">Color Correction with DaVinci Resolve 16</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Georgia</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">March 9, 2021&nbsp;&nbsp;1:39:23</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/gflynn1024/gflynn1024.github.io/categories/book/">book</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p><a target="_blank" rel="noopener" href="https://documents.blackmagicdesign.com/UserManuals/DaVinci-Resolve-16-color-correction.pdf?_v=1584057357000">DaVinci Resolve 16 官方一级调色指南</a> (官方电子版下载)<br>*这篇文章不包含书内的步骤示意图。具体教程需参考官方资料 (链接如上)。</p>
+<p>// 待更新</p>
+<h2 id="Lesson-1-Balancing-Footage"><a href="#Lesson-1-Balancing-Footage" class="headerlink" title="Lesson 1 - Balancing Footage"></a>Lesson 1 - Balancing Footage</h2><h3 id="Understanding-the-Grading-Workflow-p-7"><a href="#Understanding-the-Grading-Workflow-p-7" class="headerlink" title="Understanding the Grading Workflow (p. 7)"></a>Understanding the Grading Workflow (p. 7)</h3><ol>
+<li>Balancing and Shot Matching<br> (整体) 白平衡，曝光，色彩匹配</li>
+<li>Performing Secondary Grading<br> (局部) 色相，饱和度，etc.</li>
+<li>Creating a Look<br> 风格化调色</li>
+</ol>
+<p>十分推荐，但不强制执行这样的工作流 (p.8)。</p>
+<h3 id="Setting-Tonal-Range-and-Contrast-p-9"><a href="#Setting-Tonal-Range-and-Contrast-p-9" class="headerlink" title="Setting Tonal Range and Contrast (p. 9)"></a>Setting Tonal Range and Contrast (p. 9)</h3><p>When initially normalizing footage, a good starting point is to ensure that the shadows are floating at around <strong>5-10% above the black point (0)</strong> on the scope, while the pure white highlights (if any) should stop well <strong>under the white point (90%)</strong>. This leaves the remaining 10% as headroom for super white elements such as blown out headlights, lens flares, or metallic specular highlights that can extend beyond the white point.<br>在超黑和超白部分留出空间给超黑与超白的元素 (比如后期加入的镜头闪烁)。</p>
+<p>Normally you’d stop when the top of the trace touches the second horizontal line in the Waveform graph (896); <strong>but because this part of the trace represents a very bright window in the video clip, it makes sense to continue raising it until the trace is almost halfway between the top horizontal lines on the graph.</strong><br>但这同样不是一定的，比如画面中已经有亮度较高的元素时 (比如一扇明亮的窗户) (p. 16)。</p>
+<h3 id="Understanding-Log-Controls-and-Primaries-Wheels-p-20"><a href="#Understanding-Log-Controls-and-Primaries-Wheels-p-20" class="headerlink" title="Understanding Log Controls and Primaries Wheels (p. 20)"></a>Understanding Log Controls and Primaries Wheels (p. 20)</h3><p><strong>Primaries Wheels</strong><br>Lift - 阴影<br>Gamma - 中灰<br>Gain - 高光  </p>
+<p>调整任意变量，<strong>全局</strong>变化<br>(range 图示见 p.21)</p>
+<p><strong>Log Controls</strong><br>Shadows - 阴影<br>Midtones - 中灰<br>Highlights - 高光  </p>
+<p>调整任意变量，<strong>局部</strong>变化<br>(range 图示见 p. 22)</p>
+<p>In the adjustment settings under the Log wheels, drag the <strong>LR</strong> value to the left to move the low range down toward the shadows, thereby giving priority to the midtones controls… The Log wheels can be extremely useful when you are attempting to change the luminance or chrominance of a narrower image luminance range.<br>在 Log Controls 中，<strong>Low Range</strong> 变量可以弹性地改变 Shadows 的控制范围，防止对 Midtones 过大影响 。总而言之，在试图改变较小范围内的曝光或颜色时，Log Wheels 是非常有用的 (p. 24)。</p>
+<h2 id="Lesson-2-Creating-Color-Continuity"><a href="#Lesson-2-Creating-Color-Continuity" class="headerlink" title="Lesson 2 - Creating Color Continuity"></a>Lesson 2 - Creating Color Continuity</h2><h3 id="Building-a-Shot-Matching-Strategy-p-30"><a href="#Building-a-Shot-Matching-Strategy-p-30" class="headerlink" title="Building a Shot-Matching Strategy (p. 30)"></a>Building a Shot-Matching Strategy (p. 30)</h3><p><strong>A wide angle shot</strong> is likely to have the best overall representation of light sources and shadow tones, as well as include most of the physical elements in the scene such as actors, costumes, set design, walls, and so on.<br>在选择模板进行匹配时，最好选择广角拍摄的素材。它包含更多元素，有利于减少来自长焦端 (包含较少元素) 带来的视觉误差 (p. 31)。</p>
+<h3 id="Applying-Shot-Match-p-35"><a href="#Applying-Shot-Match-p-35" class="headerlink" title="Applying Shot Match (p. 35)"></a>Applying Shot Match (p. 35)</h3><p>In the interest of preserving the integrity of the video signal, you are advised to keep normalization, balancing, and matching <strong>on separate nodes</strong>… This method represents a common grading workflow that focuses on preserving the integrity of the RGB signal.<br>在进行批量色彩匹配时，可使用达芬奇的 <strong>Shot Match</strong> 功能。为了保留最大的操作性，推荐将各个步骤分布在<strong>不同的节点</strong> (Normal - Balance - Shot Match) (p. 35, p. 36)。</p>
+<p>Automatic shot matching is useful for quickly realizing an approximation of a match, to create a starting point for manual match grade, and to provide quick demonstrations to clients. But ultimately, you should still assess the image and check its video scopes to confirm an accurate match. If necessary, perform manual adjustments with the grading tools to refine the match.<br>Short Match 自动生成的匹配结果适合作为深度调整的起点，它并不意味着完美的成品。根据片段的实际情况 (比如考虑是否有固有色较深的山脊)，进一步手动调整曝光 (p.37)。</p>
+<h3 id="Matching-Shots-Using-Stills-p-37"><a href="#Matching-Shots-Using-Stills-p-37" class="headerlink" title="Matching Shots Using Stills (p. 37)"></a>Matching Shots Using Stills (p. 37)</h3><p>The Y (luminance) bar of the Primaries Bars affects the image differently<br>than the Primaries master wheel. The Master Wheel affects all RGB channels, which impacts saturation, whereas the bar targets only luminance.<br>在手动进行色彩匹配时，或许会使用到 YRGB 曲线单独调整。Y bar 只影响 luminance，而 Primaries master wheel 影响所有 RGB 通道，同时影响了饱和度 (p. 41)。</p>
+<h3 id="Comparing-and-Matching-Shots-Manually-p-42"><a href="#Comparing-and-Matching-Shots-Manually-p-42" class="headerlink" title="Comparing and Matching Shots Manually (p. 42)"></a>Comparing and Matching Shots Manually (p. 42)</h3><p>When shot matching, the goal is not to spread out the parade channels to match each other. Instead, you must study the relationships of the three channels in the parade and try to recreate those relationships in the clip that you are matching.<br>在利用波形图进行两个片段的色彩匹配时，我们的目标不是让两个波形图变得完全相同。我们必须根据实际情况，理解两个片段的关系进行调整。</p>
+<p>Remember, when matching, it is impossible to recreate the exact shape of the graphs, themselves. Instead, you should focus on matching the height, depths, and the midtone distributions of the graphs.<br>将二者示波器显示的内容调整得完全一致是不可能的。我们需要做的，是匹配波形的高度，深度，和中灰的分布 (p. 44)。</p>
+<blockquote>
+<p><strong>Q</strong>: How do you prevent changes made to one color channel from affecting the waveform trace of the other two channels?<br>如何在更改任意 RGB 通道时，不影响其他两个通道？<br><strong>A</strong>: 更改 <strong>Lum Mix</strong> (p. 45)</p>
+<p>Resolve tries to keep the luminance of the image constant when you change individual RGB channels in the Custom curves and Primaries Wheels palettes. This behavior is usually advantageous because it maintains the luminance of the image and allows you to adjust only the colors.<br>达芬奇默认: 在更改任意 RGB 通道时，其他两个通道也会随之改变。为了保持 Y 值 (luminance) 不变，这通常是有用的。<br>However, when shot matching, this behavior can be obstructive. To manipulate each channel independently, you need to indicate to Resolve that you do not wish to maintain a constant luminance.<br>但是，在根据示波器进行色彩匹配时，这种设置会干扰我们对 RGB 的调整 (想象一下往菜里加盐，结果糖也被自动加进去了- -)。我们要更改这项设置。</p>
+<p><strong>步骤</strong>:<br>1. Open the <strong>Color Wheel</strong> palette, and choose <strong>Primaries Wheels</strong> as the mode.<br>打开 <strong>Color Wheel</strong>，选择 <strong>Primaries Wheels</strong>。<br>2. In the adjustment controls, select page 1, and drag <strong>Lum Mix</strong> down to <strong>0</strong>.<br>在第一页中将 <strong>Lum Mix</strong> 改至 <strong>0</strong> (p.45)。</p>
+</blockquote>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/gflynn1024/gflynn1024.github.io/tags/Color-Grading/"># Color Grading</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/gflynn1024/gflynn1024.github.io/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/gflynn1024/gflynn1024.github.io/2021/03/27/summer-course/">UW-Madison 划水暑课在哪上？</a>
+            
+            
+            <a class="next" rel="next" href="/gflynn1024/gflynn1024.github.io/2021/02/01/hello-world/">Hello World</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Georgia | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
