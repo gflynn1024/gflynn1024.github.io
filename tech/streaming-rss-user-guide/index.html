@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Georgia">
+
+
+    <meta name="subtitle" content="l'art pour l'art">
+
+
+
+
+<title>流媒体、RSS 使用指南｜在数字生活中返璞归真，没有这么难 | Georgia&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Georgia&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">.blog()</a>
+                
+                    <a class="menu-item" href="/category">.category()</a>
+                
+                    <a class="menu-item" href="/about">.about()</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Georgia&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">.blog()</a>
+                
+                    <a class="menu-item" href="/category">.category()</a>
+                
+                    <a class="menu-item" href="/about">.about()</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">流媒体、RSS 使用指南｜在数字生活中返璞归真，没有这么难</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Georgia</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">04/26/21&nbsp;&nbsp;7am</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/tech/">tech</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>从前，摄影仅利用化学反应完成对景物的捕捉。后来，数码相机垄断。</p>
+<p>今天，有一群人仍然热爱银盐颗粒的感觉，他们怀念用胶片机记录纯粹光影的时代。事实上，被时代抛弃了的胶片能提供的高分辨率与宽动态范围，恰恰是数码相机的软肋。摄影诞生之初的优势，现在倒成了奢侈。</p>
+<p>我尊重各色各样的艺术，追求高效的信息检索，但有一堵墙总要将它们化简为繁，给原本纯净的内容添足。幸运的是，在你有科学上网条件的前提下，享受到国外一些更优质的服务也不是什么难事。我们来谈谈那些墙外 (aka. 均需要科学上网) 值得使用的数字服务吧。</p>
+<hr>
+<h1 id="流媒体服务"><a href="#流媒体服务" class="headerlink" title="流媒体服务"></a>流媒体服务</h1><h3 id="每一部优秀的作品都值得付费"><a href="#每一部优秀的作品都值得付费" class="headerlink" title="每一部优秀的作品都值得付费"></a>每一部优秀的作品都值得付费</h3><p>今年三月初，我开始使用 Netflix。四月中旬，我在 Apple TV+ 购买了第一部正版数字电影。为了在国内体验到这些国外的领先流媒体服务，我费了不小的劲，但体验是绝佳的。</p>
+<p>他们与国内服务最大的区别不仅在于价格 (Netflix 的价格比起国内平台非常高昂，Apple TV+ 也不便宜)，也在于<strong>对待用户的态度和流媒体服务方面的专业性</strong>:</p>
+<ul>
+<li>在版权保护方面他们非常用心，观影中的截图行为是会被自动屏蔽的 (你会得到一张纯黑的画面)；</li>
+<li>付费订阅制下，它们的界面简洁无广告，极少出现平台对原作的帧率、色彩的人为干预；</li>
+<li>分级制度也使敏感却优秀的作品传播的机会，不存在官方对作品的瓦解和亵渎。</li>
+</ul>
+<h3 id="在大陆使用国外流媒体"><a href="#在大陆使用国外流媒体" class="headerlink" title="在大陆使用国外流媒体"></a>在大陆使用国外流媒体</h3><p>方法可以参考博客<a target="_blank" rel="noopener" href="https://blog.shuziyimin.org/">数字移民 - 数字移民是一种生活方式</a>。其总结的内容包括但不限于:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.shuziyimin.org/16">在中国看 Netflix（网飞），看这一篇就够了</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.shuziyimin.org/510">简述注册土耳其区 Netflix 流程</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.shuziyimin.org/788">在中国如何订阅 Apple TV +</a></li>
+</ul>
+<p><em>冷知识:「数字移民」这个网站向中国人提供了大部分国外人不需要了解的知识</em></p>
+<h3 id="找到最便宜的-Netflix-订阅计划"><a href="#找到最便宜的-Netflix-订阅计划" class="headerlink" title="找到最便宜的 Netflix 订阅计划"></a>找到最便宜的 Netflix 订阅计划</h3><p><a target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1usSHC2Vrb4KRk3WCu_2LLhls5qtBHHRuh_9ESeXI3nw/edit#gid=285615569">Netflix 全区价格监控与货币换算</a></p>
+<h3 id="不同平台对比"><a href="#不同平台对比" class="headerlink" title="不同平台对比"></a>不同平台对比</h3><p>关于 Netflix，Apple TV+ 及其他流媒体服务平台的区别，网络上早有详细的对比。每个平台的价格不一，支持的格式与标准、片源种类与数量、支持的字幕语言都有较大差别。以我的使用体验而言:</p>
+<ul>
+<li>Netflix 可播放的自家优秀剧集非常多，韩剧日漫也很丰富，且部分区汉化比较完善，是老牌的流媒体商；</li>
+<li>Apple TV+ 起家不久，价格便宜 (买 Apple 旗舰产品的话令赠送一年的订阅) 且目前是唯一支持空间音频的平台，但影库比较有限。它集成了部分其他流媒体平台的片源，一些非自家的电影需要另付费，租赁价格在四美金左右。</li>
+<li>以上二者音频画质都非常可靠。网速允许的情况下，我使用 iPad Pro 观看时，两者均没有色块断层、色彩偏移、有效码率较低等现象。</li>
+</ul>
+<h1 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h1><h3 id="别再成为推荐算法的牺牲品，用-RSS-整理你的优质订阅"><a href="#别再成为推荐算法的牺牲品，用-RSS-整理你的优质订阅" class="headerlink" title="别再成为推荐算法的牺牲品，用 RSS 整理你的优质订阅"></a>别再成为推荐算法的牺牲品，用 RSS 整理你的优质订阅</h3><p><em>引用内容均经过原作者 (DIYgod) 授权</em></p>
+<h3 id="还不知道-RSS-大概是什么？"><a href="#还不知道-RSS-大概是什么？" class="headerlink" title="还不知道 RSS 大概是什么？"></a>还不知道 RSS 大概是什么？</h3><p>类似于我在 <a href="/tech/productivity-with-iPad/" title="iPad 上的那些民用生产力工具们">iPad 上的那些民用生产力工具们</a> 中对笔记软件 Bear 的描述，RSS 格式规范也意味着以内容为主，感官风格为辅的高效阅读方式。</p>
+<p><strong>它能够将你需要的内容实时聚集在一处</strong>。你不必每天都打开微博看看你关注的博主更新了没有，再打开知乎看看你关注的大牛更新了没有，再打开… 你只需要:</p>
+<ol>
+<li>一个 RSS 阅读器；</li>
+<li>给这个阅读器你想要获得更新的信息源 (比如微博的特别关注博主)，完成订阅。</li>
+</ol>
+<p>这样的好处是，<strong>你拥有对信息来源的主动权</strong>，而不是被广告和不感兴趣的推荐内容干扰。</p>
+<h3 id="RSS-阅读器推荐"><a href="#RSS-阅读器推荐" class="headerlink" title="RSS 阅读器推荐"></a>RSS 阅读器推荐</h3><p>iOS &amp;&amp; iPad OS: Feedly<br>Android: 待补充</p>
+<h3 id="RSSHub-来自中国开发者的开源项目"><a href="#RSSHub-来自中国开发者的开源项目" class="headerlink" title="RSSHub - 来自中国开发者的开源项目"></a>RSSHub - 来自中国开发者的开源项目</h3><p>想使用 RSS 来完成日常大部分的信息摄入？从知乎，到 GitHub，到 Twitter… 到 PornHub？</p>
+<blockquote>
+<p>看起来很美好，但提供 RSS 订阅的网站实在是太少了，原因很好理解：<strong>RSS 不利于网站方的广告投放、隐私搜集、用户存留等商业行为。</strong>我们当然不满于此，于是我发起了  <a target="_blank" rel="noopener" href="https://github.com/DIYgod/RSSHub">RSSHub</a>  项目，项目原理很简单：RSSHub 请求你想要的源站数据，然后把它们以 RSS 格式输出，做到了<strong>万物皆可 RSS</strong>。</br><br><strong>DIYgod</strong> - <a target="_blank" rel="noopener" href="https://diygod.me/ohmyrss/">我有特别的 RSS 使用技巧</a>  </p>
+</blockquote>
+<p>Salute 这些开发者们！</p>
+<h3 id="RSSHub-Radar-订阅一个-RSS-源没这么难了"><a href="#RSSHub-Radar-订阅一个-RSS-源没这么难了" class="headerlink" title="RSSHub Radar - 订阅一个 RSS 源没这么难了"></a>RSSHub Radar - 订阅一个 RSS 源没这么难了</h3><p>RSS 虽然使数字生活便利多多，但 RSS 链接通常不那么好找 (找过的都知道有多么随缘)。DIYgod 当然不满于此，于是他又发起了一个<strong>开源项目 RSSHub Radar</strong>:</p>
+<blockquote>
+<p>RSSHub Radar 是 RSSHub 的衍生项目，她是一个可以帮助你快速发现和订阅当前网站 RSS 和 RSSHub 的浏览器扩展 <br><br><img src="https://diygod.me/images/rsshub-radar1.webp"><br>使用很简单，我们在进入一个新页面时，RSSHub Radar 会<strong>自动检测</strong>当前页面有没有 RSS 和 RSSHub 支持，检测到则会在右下角显示一个角标，如果我们想订阅当前页面的 RSS，点击扩展图标，会弹出一个列表，如图所示，列表有三项内容：<strong>当前页面上的 RSS、适用于当前页面的 RSSHub、适用于当前网站的 RSSHub</strong>，你可以选择复制链接或<strong>一键订阅</strong>到 Feedly Inoreader TinyTinyRSS</br><br><img src="https://diygod.me/images/rsshub-radar2.webp"><br>设置页允许你使用自建的 RSSHub 域名、设置快捷键、立即更新规则、选择一键订阅到 TinyTinyRSS 还是 Feedly Inoreader、选择是否开启角标提醒等。支持列表列出了当前支持的 RSSHub 规则。</br><br><strong>DIYgod</strong> - <a target="_blank" rel="noopener" href="https://diygod.me/rsshub-radar/">RSSHub Radar — 订阅一个 RSS 源不应该这么难</a>  </p>
+</blockquote>
+<p>这样一来你便拥有了一套比较方便的 RSS 流程。</p>
+<h1 id="继续更新"><a href="#继续更新" class="headerlink" title="继续更新"></a>继续更新</h1>
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/tech/productivity-with-iPad/">iPad 上的那些民用生产力工具们</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Georgia | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
