@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Georgia&#39;s Blog</title>
+  <icon>https://gerogiaflynn.com/icon.png</icon>
+  <subtitle>l&#39;art pour l&#39;art</subtitle>
+  <link href="https://gerogiaflynn.com/atom.xml" rel="self"/>
+  
+  <link href="https://gerogiaflynn.com/"/>
+  <updated>2021-04-26T14:03:09.201Z</updated>
+  <id>https://gerogiaflynn.com/</id>
+  
+  <author>
+    <name>Georgia</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>流媒体、RSS 使用指南｜在数字生活中返璞归真，没有这么难</title>
+    <link href="https://gerogiaflynn.com/tech/streaming-rss-user-guide/"/>
+    <id>https://gerogiaflynn.com/tech/streaming-rss-user-guide/</id>
+    <published>2021-04-26T12:50:08.000Z</published>
+    <updated>2021-04-26T14:03:09.201Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;从前，摄影仅利用化学反应完成对景物的捕捉。后来，数码相机垄断。&lt;/p&gt;
+&lt;p&gt;今天，有一群人仍然热爱银盐颗粒的感觉，他们怀念用胶片机记录纯粹光影的时代。事实上，被时代抛弃了的胶片能提供的高分辨率与宽动态范围，恰恰是数码相机的软肋。摄影诞生之初的优势，现在倒成了奢侈。&lt;/p&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://gerogiaflynn.com/categories/tech/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>iPad 上的那些民用生产力工具们</title>
+    <link href="https://gerogiaflynn.com/tech/productivity-with-iPad/"/>
+    <id>https://gerogiaflynn.com/tech/productivity-with-iPad/</id>
+    <published>2021-04-22T04:00:00.000Z</published>
+    <updated>2021-04-26T14:06:07.340Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;装载 M1 芯片的 iPad Pro 发布了。一个垄断了平板电脑市场的触摸设备 + 今年第二强的 ARM 架构芯片，到底能演绎出什么样的新奇体验？是性能过剩还是碰撞出全新的概念？下半年可以说是非常值得期待了。&lt;/p&gt;
+&lt;p&gt;在苹果与开发者真正将平板与 M1</summary>
+        
+      
+    
+    
+    
+    <category term="tech" scheme="https://gerogiaflynn.com/categories/tech/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UW-Madison 划水暑课在哪上？</title>
+    <link href="https://gerogiaflynn.com/college/summer-course/"/>
+    <id>https://gerogiaflynn.com/college/summer-course/</id>
+    <published>2021-03-27T19:56:13.000Z</published>
+    <updated>2021-04-26T12:47:56.425Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;General Education 真是挺烦的。就咱们学校文理学院的毕业要求来说，Biology, Literature 和 Social Sci 都是有一定必修要求的。为了尽早完成这些非专业课的毕业要求，避免不感兴趣的课程占用大量时间拉低</summary>
+        
+      
+    
+    
+    
+    <category term="college" scheme="https://gerogiaflynn.com/categories/college/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Color Correction with DaVinci Resolve 16</title>
+    <link href="https://gerogiaflynn.com/book/color-correction-with-davinci-resolve-16/"/>
+    <id>https://gerogiaflynn.com/book/color-correction-with-davinci-resolve-16/</id>
+    <published>2021-03-09T07:39:23.000Z</published>
+    <updated>2021-04-26T12:47:47.694Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://documents.blackmagicdesign.com/UserManuals/DaVinci-Resolve-16-color-correction.pdf?_v=1584057357000&quot;&gt;DaVinci Resolve 16</summary>
+        
+      
+    
+    
+    
+    <category term="book" scheme="https://gerogiaflynn.com/categories/book/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://gerogiaflynn.com/test/hello-world/"/>
+    <id>https://gerogiaflynn.com/test/hello-world/</id>
+    <published>2021-02-01T06:00:00.000Z</published>
+    <updated>2021-04-26T12:47:44.252Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="https://gerogiaflynn.com/categories/test/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Test</title>
+    <link href="https://gerogiaflynn.com/test/Markdown-Test/"/>
+    <id>https://gerogiaflynn.com/test/Markdown-Test/</id>
+    <published>1982-06-25T05:00:00.000Z</published>
+    <updated>2021-04-26T14:06:05.606Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;项目地址: &lt;a href=&quot;https://pandao.github.io/editor.md/&quot;&gt;开源在线 Markdown 编辑器&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;主要特性&quot;&gt;&lt;a href=&quot;#主要特性&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="test" scheme="https://gerogiaflynn.com/categories/test/"/>
+    
+    
+  </entry>
+  
+</feed>
