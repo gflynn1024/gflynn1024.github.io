@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Georgia&#39;s Blog</title>
+  <icon>https://blog.georgiaflynn.com/icon.png</icon>
+  <subtitle>tech/art/misc</subtitle>
+  <link href="https://blog.georgiaflynn.com/atom.xml" rel="self"/>
+  
+  <link href="https://blog.georgiaflynn.com/"/>
+  <updated>2022-05-17T01:42:17.288Z</updated>
+  <id>https://blog.georgiaflynn.com/</id>
+  
+  <author>
+    <name>Georgia</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日志 3｜发生得太快</title>
+    <link href="https://blog.georgiaflynn.com/log/log3/"/>
+    <id>https://blog.georgiaflynn.com/log/log3/</id>
+    <published>2022-04-16T02:40:21.000Z</published>
+    <updated>2022-05-17T01:42:17.288Z</updated>
+    
+    
+    <summary type="html">update: 我找到实习了!</summary>
+    
+    
+    
+    <category term="log" scheme="https://blog.georgiaflynn.com/categories/log/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日志 2｜来美国一个月了</title>
+    <link href="https://blog.georgiaflynn.com/log/log2/"/>
+    <id>https://blog.georgiaflynn.com/log/log2/</id>
+    <published>2021-10-06T02:40:21.000Z</published>
+    <updated>2022-05-17T01:36:34.505Z</updated>
+    
+    
+    <summary type="html">渴望点归属感</summary>
+    
+    
+    
+    <category term="log" scheme="https://blog.georgiaflynn.com/categories/log/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日志 1 | 放一天假 | 建模 | 相关视频分享</title>
+    <link href="https://blog.georgiaflynn.com/log/log1/"/>
+    <id>https://blog.georgiaflynn.com/log/log1/</id>
+    <published>2021-07-17T20:24:19.000Z</published>
+    <updated>2022-05-17T01:43:34.147Z</updated>
+    
+    
+    <summary type="html">最近刷题刷累了就会去建模，调节一下状态。&lt;br&gt;跟着 Leo Lee 学着开始建比较写实的场景，显卡一下子就跟不上了 (之前一直在玩 low poly)。</summary>
+    
+    
+    
+    <category term="log" scheme="https://blog.georgiaflynn.com/categories/log/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日志 0 | 做梦都在学算法。。</title>
+    <link href="https://blog.georgiaflynn.com/log/log0/"/>
+    <id>https://blog.georgiaflynn.com/log/log0/</id>
+    <published>2021-07-08T19:49:28.000Z</published>
+    <updated>2022-05-17T01:36:34.480Z</updated>
+    
+    
+    <summary type="html">菜狗实锤</summary>
+    
+    
+    
+    <category term="log" scheme="https://blog.georgiaflynn.com/categories/log/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UW-Madison 划水暑课在哪上？</title>
+    <link href="https://blog.georgiaflynn.com/college/summer-course/"/>
+    <id>https://blog.georgiaflynn.com/college/summer-course/</id>
+    <published>2021-03-27T19:56:13.000Z</published>
+    <updated>2022-05-17T01:36:34.560Z</updated>
+    
+    
+    <summary type="html">12 学分只要 2000 刀不到？</summary>
+    
+    
+    
+    <category term="college" scheme="https://blog.georgiaflynn.com/categories/college/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Color Correction with DaVinci Resolve 16</title>
+    <link href="https://blog.georgiaflynn.com/book/color-correction-with-davinci-resolve-16/"/>
+    <id>https://blog.georgiaflynn.com/book/color-correction-with-davinci-resolve-16/</id>
+    <published>2021-03-09T07:39:23.000Z</published>
+    <updated>2022-05-17T01:36:34.467Z</updated>
+    
+    
+    <summary type="html">一级校色指南</summary>
+    
+    
+    
+    <category term="book" scheme="https://blog.georgiaflynn.com/categories/book/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown Test</title>
+    <link href="https://blog.georgiaflynn.com/test/Markdown-Test/"/>
+    <id>https://blog.georgiaflynn.com/test/Markdown-Test/</id>
+    <published>1982-06-25T05:00:00.000Z</published>
+    <updated>2022-05-03T15:16:13.479Z</updated>
+    
+    
+    <summary type="html">Markdown 样式参考</summary>
+    
+    
+    
+    <category term="test" scheme="https://blog.georgiaflynn.com/categories/test/"/>
+    
+    
+  </entry>
+  
+</feed>

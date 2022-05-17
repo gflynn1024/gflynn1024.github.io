@@ -1,0 +1,246 @@
+body {
+  background-color: #282828;
+  height: 100%;
+}
+
+body .pageContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  background-color: #db9700;
+}
+
+body .pageContainer .container2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.spaceBar {
+  height: 86px;
+}
+
+.spaceBarMini {
+  height: 50px;
+}
+
+.spaceBarMini {
+  height: 35px;
+}
+
+p {
+  margin: 0%;
+  padding: 10px 20px 10px 20px;
+  color: #212327;
+  font-family: "Noto Serif SC", Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+p span {
+  color: #fbeeb8;
+  font-style: italic;
+}
+
+.quote {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6rem;
+}
+
+.quoteAuthor {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6rem;
+  text-align: right;
+  font-style: italic;
+}
+
+.title-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: pink;
+}
+
+.title-flex::before,
+.title-flex::after {
+  content: "";
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 4px;
+  background: #181818;
+}
+
+.title-flex::before {
+  margin-right: 0rem;
+}
+
+.title-flex::after {
+  margin-left: 0rem;
+}
+
+.title {
+  font-weight: 900;
+  margin: 0%;
+  padding: 10px 20px 10px 20px;
+  color: #212327;
+  font-family: "Noto Serif SC", Georgia, Times, "Times New Roman", serif;
+  font-size: 2.2rem;
+  text-align: right;
+}
+
+.filmTitle {
+  margin: 0%;
+  padding: 10px 20px 10px 20px;
+  color: #212327;
+  font-family: "Noto Serif SC", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.8rem;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quoteContent {
+  margin: 0%;
+  padding: 10px 20px 10px 20px;
+  color: #212327;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: normal;
+  border-left: 2px solid #4d4d4d;
+}
+
+.imgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.imgContainer img {
+  width: auto;
+  height: 18rem;
+}
+
+.imgContainer .feature {
+  margin: 0%;
+  padding: 0px;
+  color: #212327;
+  font-family: "Noto Serif SC", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 2rem;
+  margin-right: 0%;
+}
+
+.imgContainer .feature span {
+  font-weight: 800;
+}
+
+.imgContainer .feature2 {
+  margin: 0%;
+  padding: 0px;
+  color: #212327;
+  font-family: "Noto Serif SC", Georgia, Times, "Times New Roman", serif;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 600;
+  margin-right: 2rem;
+  margin-left: 0%;
+}
+
+.imgContainer .feature2 span {
+  font-weight: 800;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonContainer button {
+  color: #cccccc;
+  text-align: center;
+  background-color: #303030;
+  border-radius: 6px;
+  width: 10rem;
+  margin: 2rem auto;
+  line-height: 45px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-text-decoration-line: none !important;
+          text-decoration-line: none !important;
+  border: 0px solid #212327;
+}
+
+.promote {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem auto;
+  background-color: #f1f1f1;
+  padding: 40px 0px;
+  width: 100%;
+}
+
+.promote p {
+  font-size: 1.6rem;
+}
+
+.promote button {
+  cursor: pointer;
+  color: #f1f1f1;
+  background-color: #db9700;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=200601.css.map */
